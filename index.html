@@ -14,7 +14,7 @@
         <section>
             <form action="" method="get">
 
-                <fieldset>
+                <!-- <fieldset>
                         
                         <legend><strong>DADOS PESSOAIS</strong></legend>
 
@@ -102,6 +102,40 @@
 
                     <label for="userCity">Cidade</label>
                     <input type="text" name="userCity" autocomplete="address-level2" placeholder="Ex.: Fortaleza">
+                </fieldset> -->
+
+                <fieldset>
+                    <legend>Hábitos</legend>
+                    <p>Redes Sociais: </p>
+                    <input type="checkbox" name="social" id="instagram" value="instagram">
+                    <label for="instagram">Instagram</label>
+                    <br>
+
+                    <input type="checkbox" name="social" value="facebook">
+                    <label for="social">Facebook</label>
+                    <br>
+
+                    <input type="checkbox" name="social" value="linkedin">
+                    <label for="social">Linkedin</label>
+                    <br>
+
+                    <input type="checkbox" name="social" value="x">
+                    <label for="social">X</label>
+                    <br>
+
+                    <label for="musicStyle">Estilo Musical:</label>
+                    <input list="styleTypes" id="musicStyle" type="text" name="userMusicStyle">
+                    <datalist id="styleTypes">
+                        <option value="Rock">
+                        <option value="Pop">
+                        <option value="Samba">
+                        <option value="Funk">
+                    </datalist>
+                    <br>
+
+                    <label for="favoriteColor">Cor favorita</label>
+                    <input type="color" id="favoriteColor" name="userFavoriteColor">
+
                 </fieldset>
 
                 <button type="submit">Enviar</button>
