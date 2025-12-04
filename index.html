@@ -18,24 +18,24 @@
                         
                         <legend><strong>DADOS PESSOAIS</strong></legend>
 
-                        <label for="userName">Nome</label>
-                        <input type="text" name="userName" required>
+                        <label for="nameUser">Nome</label>
+                        <input type="text" name="userName" id="nameUser" required>
                         <br>
 
-                        <label for="userAge">Idade</label>
-                        <input type="number" name="userAge" min="12" max="100" required>
+                        <label for="ageUser">Idade</label>
+                        <input type="number" name="userAge" min="12" max="100" id="ageUser" required>
                         <br>
 
                         <label for="birthDate">Data de Nascimento</label>
                         <input type="date" name="birthDate">
                         <br>
 
-                        <label for="userEmail">E-mail</label>
-                        <input type="email" name="userEmail" required>
+                        <label for="emailUser">E-mail</label>
+                        <input type="email" name="userEmail" id="emailUser" required>
                         <br>
 
-                        <label for="userNumberPhone">Telefone</label>
-                        <input type="tel" name="userNumberPhone" pattern="[0-9]{11}" placeholder="(DD)X-XXXX-XXXX">
+                        <label for="numberPhoneUser">Telefone</label>
+                        <input type="tel" name="userNumberPhone" pattern="[0-9]{11}" placeholder="(DD)X-XXXX-XXXX" id="numberPhoneUser">
                         <br>
 
                         <label for="userImage">Upload de foto</label>
@@ -48,13 +48,13 @@
                     <legend>Perfil</legend>
                     
                     <p>Genero: </p>
-                    <input type="radio" name="userGender" value="Masculino">
-                    <label for="userGender">Masculino</label>
+                    <input type="radio" name="userGender" value="Masculino" id="manUser">
+                    <label for="manUser">Masculino</label>
 
-                    <input type="radio" name="userGender" value="Femenino">
-                    <label for="userGender">Femenino</label>
+                    <input type="radio" name="userGender" value="Femenino" id="womanUser">
+                    <label for="womanUser">Femenino</label>
 
-                    <input type="radio" name="userGender" value="notInformad">
+                    <input type="radio" name="userGender" value="notInformad" id="notInformad">
                     <label for="notInformad">Prefiro não informar</label>
                     <br>
 
@@ -68,8 +68,8 @@
                     </select>
                     <br>
 
-                    <label for="userState">Estado</label>
-                    <select name="userState">
+                    <label for="selectState">Estado</label>
+                    <select name="userState" id="selectState">
                         <option value="Acre">Acre</option>
                         <option value="Alagoas">Alagoas</option>  
                         <option value="Amapá">Amapá</option>     
@@ -102,7 +102,7 @@
 
                     <label for="userCity">Cidade</label>
                     <input type="text" name="userCity" autocomplete="address-level2" placeholder="Ex.: Fortaleza">
-                </fieldset> -->
+                </fieldset>
 
                 <fieldset>
                     <legend>Hábitos</legend>
@@ -136,7 +136,37 @@
                     <label for="favoriteColor">Cor favorita</label>
                     <input type="color" id="favoriteColor" name="userFavoriteColor">
 
+                </fieldset>  -->
+
+                <fieldset>
+                    <legend>Opinião</legend>
+
+                    <input type="radio" name="opinion" value="excellent"id="excellentOpinion">
+                    <label for="excellentOpinion">Ótima</label>
+                    <br>
+
+                    <input type="radio" name="opinion" id="goodOpinion" value="good">
+                    <label for="goodOpinion">Boa</label>
+                    <br>
+
+                    <input type="radio" name="opinion" id="regularOpinion" value="regular">
+                    <label for="regularOpinion">Regular</label>
+                    <br>
+
+                    <input type="radio" name="opinion" id="badOpinion" value="bad">
+                    <label for="badOpinion">Ruim</label>
+                    <br>
+                    <br>
+
+                    <label for="userCommet">Escreva sua opinião</label>
+                    <br>
+                    <textarea name="commet" id="userCommet" placeholder="Digite aqui..."></textarea>
+
+
+
+
                 </fieldset>
+
 
                 <button type="submit">Enviar</button>
             </form>
